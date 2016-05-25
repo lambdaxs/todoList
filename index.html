@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>待办列表</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+</head>
+<body>
+
+<div class="taskList" id="pending">
+    <h3>待办事项</h3>
+</div>
+
+<div class="taskList" id="inProgress">
+    <h3>进行中</h3>
+</div>
+
+<div class="taskList" id="complete">
+    <h3>完成事项</h3>
+</div>
+
+<div class="taskList" id="edit">
+    <h3>添加事项</h3>
+    <form id="todo-form">
+        <input id="todoTitle" type="text" placeholder="标题">
+        <textarea id="todoContent" placeholder="内容"></textarea>
+        <input type="text" placeholder="截止日期 (月/日/年)" id="todoDate"/>
+        <input id="addButton" type="button" value="添加待办">
+    </form>
+</div>
+
+
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="app.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        new todoList();
+    });
+</script>
+</html>
