@@ -96,6 +96,19 @@ var todoList = (function () {
         });
 
 
+        $('#delete-div').droppable({
+            drop: function(event, ui) {
+                var element = ui.helper,
+                    id = element.attr('id');
+                _this.removeTask({
+                    id: id
+                });
+                delete data[id];
+                _this.saveData();
+            }
+        });
+
+
     };
 
     MyTodoList.prototype.CreateTask = function (params) {

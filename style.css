@@ -45,3 +45,13 @@ h3{
 .hoverCS{
     background-color: #47a447;
 }
+
+#delete-div {
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 10px;
+    width: 230px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
